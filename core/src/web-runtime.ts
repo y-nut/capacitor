@@ -3,7 +3,7 @@ export class CapacitorWeb {
   platform = 'web';
   isNative = false;
 
-  constructor() {
+  constructor() { 
     // Build a proxy for the Plugins object that returns the "Noop Plugin"
     // if a plugin isn't available
     this.Plugins = new Proxy<any>(this.Plugins, {
